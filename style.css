@@ -3,12 +3,13 @@
 body {
     margin: 20px;
     font-family: "Poppins", sans-serif;
-    background: #00268e;
+    background: #061a51;
 }
 h1, h2 {
     margin: 0;
     color: #abb5b5;
     text-align: center;
+    font-size: 25px;
 }
 h1 {
     color: rgb(236, 244, 246);
@@ -27,7 +28,7 @@ p {
 }
 div label {
     font-size: 12px;
-    text-shadow: gray 2px 2px 5px;
+    /* text-shadow: gray 2px 2px 5px; */
     width: fit-content;
     margin-top: 10px;
 }
@@ -37,9 +38,7 @@ section.choices {
 a {
     color: orange;
 }
-a:hover {
-    color: rgb(255, 189, 67);
-}
+
 img {
     width: 100%;
     margin-bottom: 10px;
@@ -74,8 +73,53 @@ input {
 input#other_input {
     width: 250px;
 }
-div button {
+.send_form button {
     display: block;
     width: 100px;
     margin: auto;
+}
+button {
+    font-size: 12px;
+}
+.login button {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+}
+
+
+@media only screen and (min-width: 550px) {
+    section div {
+        /* grid-template-columns: repeat(1, 1fr); */
+    }
+    p, button {
+        font-size: 1rem;
+    }   
+    h1, h2 {
+        font-size: 2rem;
+    }
+    a:hover {
+        color: rgb(255, 189, 67);
+        text-shadow: 0px 0px 5px rgb(255, 225, 168);
+
+        /* position: absolute; */
+        /* left: 263px; */
+    }
+    div input {
+        height: 2rem;
+    }
+    .choices input {
+        margin-right: 10px;
+    }
+    img {
+        width: 75%;
+        margin: auto;
+    }
+    div label {
+        font-size: 1rem;
+    }
+
+}
+@media only screen and (min-width: 1280px) {
+
 }
