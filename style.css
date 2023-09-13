@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;1,400;1,600&display=swap');
+
+body {
+    margin: 20px;
+    font-family: "Poppins", sans-serif;
+    background: #00268e;
+}
+h1, h2 {
+    margin: 0;
+    color: #abb5b5;
+    text-align: center;
+}
+h1 {
+    color: rgb(236, 244, 246);
+}
+p {
+    margin: 0;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+div label {
+    font-size: 12px;
+    text-shadow: gray 2px 2px 5px;
+    width: fit-content;
+    margin-top: 10px;
+}
+section.choices {
+    margin-top: 10px;
+}
+a {
+    color: orange;
+}
+a:hover {
+    color: rgb(255, 189, 67);
+}
+img {
+    width: 100%;
+    margin-bottom: 10px;
+    box-shadow: rgb(55, 55, 55) 0px 0px 12px;
+}
+header {
+    max-width: 1200px;
+    margin: 20px auto;
+    border-bottom: 1px solid #bbc7c7;
+}
+
+form {
+    background: white;
+    padding: 10px;
+}
+section input {
+    margin-bottom: 20px;
+}
+section.user_input {
+    font-size: 12px;
+    /* border-bottom: 1px dotted lightcoral; */
+}
+div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    align-items: center;
+}
+input {
+    border: 1px solid lightgray;
+}
+input#other_input {
+    width: 250px;
+}
+div button {
+    display: block;
+    width: 100px;
+    margin: auto;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vet Housing Site</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Ending Veteran Homelessness</h1>
+        </header>
+        <form action="submit" class="container">
+            <div class="description">
+                <h2>How Property Owners Can Help</h2>
+                <p>
+                    No individual who served their country should be without a home. The VA cannot address this alone. and we need property owners and housing providers who are interested in housing America's Heroes! 
+                </p>
+                <p>
+                    Property owners have a unique opportunity to give back to those who have served. Veterans have selflessly defended our nation in times of need - and landlords can make a positive impact by protecting these individuals from the risk of homelessness. Housing veterans doesn't just provide shelter, but it can lead to life-changing health, social, and socioeconomic outcomes for them and their families. Furthermore, housing veterans provides a mutually beneficial relationship; landlords will benefit from responsible, often long-term, renters, support from the VA, and guaranteed payments that come through "Housing Choice Vouchers" or grantees offering short-term subsidies.
+                </p>
+                <p>
+                    <strong>PLEASE NOTE:</strong>
+                    <i>
+                        VA does not make direct payments to property owners. Rental subsidy payments described here are disbursed from either homeless Veteran-specific Housing Choice Vouchers administered by local public housing authorities or through nonprofit organizations that administer VA-funded grants.
+                    </i>
+                </p>
+                <p>
+                    <strong>For more information please <a href="https://www.va.gov/greater-los-angeles-health-care/stories/hud-vash-formerly-homeless-veterans-why-property-owners-should-rent-to-them/">CLICK HERE</a>
+                    </strong>
+                </p>
+            </div>
+            <section class="user_input">
+                <div>
+                    <label for="first">First Name</label>
+                
+                    <input type="text" id="first" name="first">
+                </div>            
+                <div>
+                    <label for="last">Last Name</label>
+                
+                    <input type="text" id="last" name="last">
+                </div>
+            </section>
+            <section class="user_input">
+                <div>
+                    <label for="email">Email Address</label>
+                
+                    <input type="text" id="email" name="email">
+                </div>            
+                <div>
+                    <label for="phone">Phone Number</label>
+                
+                    <input type="text" id="phone" name="phone">
+                </div>
+            </section>
+            <section class="user_input">
+                <div>
+                    <label for="apartment">Apartment Address</label>
+                
+                    <input type="text" id="apartment" name="apartment">
+                </div>            
+                <div>
+                    <label for="website">Website</label>
+                
+                    <input type="text" id="website" name="website">
+                </div>
+            </section>
+            <section class="user_input">
+                <div>
+                    <label for="region">Region of Apartment</label>
+                
+                    <img src="/image_folder/SPA + County Map.png" alt="">
+                </div>     
+                <section class="choices">
+                    <!--CHoose 1 option section--> 
+                    <input type="radio" name="region" value="Antelope Valley Area (SPA1)">Antelope Valley Area (SPA1)<br>
+
+                    <input type="radio" name="region" value="San Fernando Valley Area (SPA 2)">San Fernando Valley Area (SPA 2)<br>
+
+                    <input type="radio" name="region" value="San Gabriel Valley Area (SPA3)">San Gabriel Valley Area (SPA3)<br>
+                    
+                    <input type="radio" name="region" value="Downtown/Hollywood Area (SPA 4)">Downtown/Hollywood Area (SPA 4)<br>
+
+                    <input type="radio" name="region" value="West Los Angeles/Culver City Area (SPA 5)">West Los Angeles/Culver City Area (SPA 5)<br>
+
+                    <input type="radio" name="region" value="Crenshaw/Florence/Watts Area (SPA 6)">Crenshaw/Florence/Watts Area (SPA 6)<br>
+
+                    <input type="radio" name="region" value="Huntington Park/Lakewood/Whittier Area (SPA 7)">Huntington Park/Lakewood/Whittier Area (SPA 7)<br>
+
+                    <input type="radio" name="region" value="Inglewood/Carson Area (SPA 8)">Inglewood/Carson Area (SPA 8)<br>
+
+                    <input type="radio" name="region" value="Kern County">Kern County<br>
+
+                    <input type="radio" name="region" value="San Luis Obispo County">San Luis Obispo County<br>
+
+                    <input type="radio" name="region" value="Santa Barbara County">Santa Barbara County<br>
+
+                    <input type="radio" name="region" value="Ventura County">Ventura County<br>
+                </section>
+                <!--END OF SECTION-->
+                <div>
+                    <label for="description">Description of Housing</label>
+                </div>
+                <section class="choices">
+                    <input type="radio" name="description" value="Multifamily Housing (1-9 units)">Multifamily Housing (1-9 units)<br>
+                    <input type="radio" name="description" value="Multifamily Housing (10-19 units)">Multifamily Housing (10-19 units)<br>
+                    <input type="radio" name="description" value="Multifamily Housing (20+ units)">Multifamily Housing (20+ units)<br>
+                    <input type="radio" name="description" value="Single Family Home">Single Family Home<br>
+                    <input type="radio" name="description" value="Accessory Dwelling Unit (ADU)">Accessory Dwelling Unit (ADU)<br>
+                    <input type="radio" name="description" value="Accessory Dwelling Unit (ADU)">Other: <input type="text" name="description" id="other_input"> <br>
+                </section>
+            </section>
+            <section class="user_input">
+                <div>
+                    <label for="how">How did you hear of this program?</label>
+                
+                    <input type="text" id="how" name="how">
+                </div>            
+                <div>
+                    <label for="additional">Any additional information you need?</label>
+                
+                    <input type="text" id="additional" name="additional">
+                </div>
+            </section>
+            <div class="send_form">
+                <button type="submit">Send Form</button>
+            </div>
+        </form>
+        <script src="script.js"></script>
+    </body>
+</html>
