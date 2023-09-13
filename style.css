@@ -57,7 +57,7 @@ form {
 section input {
     margin-bottom: 20px;
 }
-section.user_input {
+section.user_input, .choices {
     font-size: 12px;
     /* border-bottom: 1px dotted lightcoral; */
 }
