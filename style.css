@@ -57,6 +57,10 @@ form {
 }
 section input {
     margin-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px
+    
+    ;
 }
 section.user_input, .choices {
     font-size: 12px;
