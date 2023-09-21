@@ -91,13 +91,25 @@ button {
     display: block;
     width: fit-content;
     margin-left: auto;
+
 }
 
+.some_images {
+    /* width: fit-content; */
+    background-color: white;
+    height: fit-content;
+    padding: 5px;
+}
+#va_logo {
+    width: 100%;
+    height: inherit;
+    margin: 0;
+}
 
 @media only screen and (min-width: 550px) {
-    section div {
-        /* grid-template-columns: repeat(1, 1fr); */
-    }
+    /* section div {
+        /* grid-template-columns: repeat(1, 1fr);
+    } */
     p, button {
         font-size: 1rem;
     }   

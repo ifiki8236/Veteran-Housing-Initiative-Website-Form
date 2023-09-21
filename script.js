@@ -5,16 +5,15 @@ function sendUserData(e) {
     // submitted_form_data json object with the current values
     let submitted_form_data = {
         'landlords': {
-            first: document.getElementById('first').value,
-            last: document.getElementById('last').value,
-            email: document.getElementById('email').value,
+            first: document.getElementById('first').value.toUpperCase(),
+            last: document.getElementById('last').value.toUpperCase(),
+            email: document.getElementById('email').value.toUpperCase(),
             phone: document.getElementById('phone').value,
             apartment: document.getElementById('apartment').value,
             website: document.getElementById('website').value,
             region: document.querySelector('input[name="region"]:checked').value,
             description: document.querySelector('input[name="description"]:checked').value,
             how: getCheckedCheckboxes('how'), // Define or replace this function
-            // other_how: document.getElementById('other_how').value,
             additional: document.getElementById('additional').value
         }
     }
