@@ -1,24 +1,44 @@
 const form = document.getElementById('the_form')
 
+const firstValue = document.getElementById('first');
+const lastValue = document.getElementById('last');
+const emailValue = document.getElementById('email');
+const phoneValue = document.getElementById('phone');
+const apartmentValue = document.getElementById('apartment');
+const websiteValue = document.getElementById('website');
+const additionalValue = document.getElementById('additional');
+
 function sendUserData(e) {
     e.preventDefault()
     // submitted_form_data json object with the current values
-    let submitted_form_data = {
-        'landlords': {
-            first: document.getElementById('first').value.toUpperCase(),
-            last: document.getElementById('last').value.toUpperCase(),
-            email: document.getElementById('email').value.toUpperCase(),
-            phone: document.getElementById('phone').value,
-            apartment: document.getElementById('apartment').value,
-            website: document.getElementById('website').value,
-            region: document.querySelector('input[name="region"]:checked').value,
-            description: document.querySelector('input[name="description"]:checked').value,
-            how: getCheckedCheckboxes('how'), // Define or replace this function
-            additional: document.getElementById('additional').value
+
+    try {
+        let submitted_form_data = {
+            first: firstValue.value.toUpperCase(),
+            last: lastValue.value.toUpperCase(),
+            email: emailValue.value.toUpperCase(),
+            phone: phoneValue.value,
+            apartment: apartmentValue.value,
+            website: websiteValue.value,
+            region: document.querySelector('input[name="region"]:checked').value, // Check if regionValue exists
+            description: document.querySelector('input[name="description"]:checked').value, // Check if descriptionValue exists
+            how:  getCheckedCheckboxes('how'),
+            additional: additionalValue.value,
         }
+        if (checkFormInput(submitted_form_data) === true) {
+            console.log(submitted_form_data);
+            // toPythonAPI(submitted_form_data);
+        } else {
+            console.log('Form data is empty or invalid.');
+            console.log(submitted_form_data);
+        }
+
+    } catch(error) {
+        alert('Required areas cannot be empty')
+        console.error(error)
     }
-    toPythonAPI(submitted_form_data)
-    console.log(submitted_form_data)
+    
+
 }
 
 // the getCheckedCheckboxes function
@@ -44,4 +64,23 @@ function toPythonAPI(submitted_form_data){
     })
 }
 
-form.addEventListener('submit', sendUserData)
+//checking information validity
+function checkFormInput(submitted_form_data) {
+    const keys = Object.keys(submitted_form_data)
+    let isEmpty = false
+    for(let i = 0; i < keys.length-1 && isEmpty === false; i++) {
+        const key = keys[i]
+        if(submitted_form_data[key] === '') {
+            isEmpty = true
+        }
+    }
+    if(isEmpty === true) {
+    alert('One or more required fields may be empty')
+    return isEmpty = false
+    } else {
+        console.log('All required fields are filled')
+        return isEmpty = true
+    }
+}
+
+form.addEventListener('submit', sendUserData) 

@@ -13,6 +13,10 @@ h1, h2 {
 }
 h1 {
     color: rgb(236, 244, 246);
+    font-size: 2rem;
+}
+h1, h2 {
+    text-shadow: 1px 1px 2px black;
 }
 p {
     margin: 0;
@@ -104,6 +108,11 @@ button {
     width: 100%;
     height: inherit;
     margin: 0;
+}
+.required {
+    font-size: 1.2rem;
+    color: red;
+    margin: 5px;
 }
 
 @media only screen and (min-width: 550px) {
