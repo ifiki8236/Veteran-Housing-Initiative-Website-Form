@@ -1,0 +1,9 @@
+.content-section {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This makes the container take the full height of the viewport */
+}
+.login_form {
+    height: 500px;
+}
