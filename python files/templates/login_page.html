@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="content-section">
-        <form action="/login" method="post" class="login_form">
+        <form action="{{url_for('login')}}" method="post" class="login_form">
             <section >
                 <div class="title">
                     <h2>
@@ -19,10 +19,10 @@
                 </div>
                 <div class="container">
                 <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="username" required>
+                <input id="user" type="text" placeholder="Enter Username" name="username" value="" autocomplete="off" required>
             
                 <label for="password"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="password" required>
+                <input id="pswrd" type="password" placeholder="Enter Password" name="password" value="" autocomplete="off" required>
             
                 <input type="submit"/>
                 <label>
@@ -37,5 +37,14 @@
             </div> -->
           </form>
     </div>
+    <script>
+        // window.onload = function() {
+        //     let username = document.getElementById('user')
+        //     let password = document.getElementById('pswrd')
+        //     if(username) username.value = " "
+        //     if(password) password.value = " "
+        // };
+    </script>
+        
 </body>
 </html>

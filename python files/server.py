@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request, render_template, session, redirect,g, url_for
+from flask import Flask, jsonify, request, render_template, session, redirect,g, url_for, flash
 import os
 from flask_cors import CORS
 from methods_list import dictToList
@@ -40,6 +40,10 @@ def before_request():
     if 'user' in session:
         g.user=session['user']
 
+@app.route('/dropsession', methods=['GET', 'POST'])
+def dropsession():
+    session.pop('user', '')
+    return redirect(url_for('login'))
 # Run the Flask app
 if __name__ == '__main__':
     app.run(debug=True)
