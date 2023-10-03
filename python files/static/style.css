@@ -84,6 +84,7 @@ img {
 form {
     background: white;
     padding: 10px;
+    border-radius: 15px;
 }
 section input {
     margin-bottom: 20px;
@@ -140,7 +141,7 @@ button {
 }
 #va_logo {
     width: 100%;
-    height: inherit;
+    height: 75px;
     margin: 0;
 }
 .required {
@@ -148,11 +149,12 @@ button {
     color: red;
     margin: 5px;
 }
-header .bttn {
+header .bttn, #submit_bttn  {
     font-weight: bolder;
     width: fit-content;
-    background-color: white;
+    background-color: lightblue;
     border: solid black 2px;
+    border-radius: 10px;
 }
 header .bttn:active {
     background-color: black;
@@ -160,6 +162,11 @@ header .bttn:active {
     color: whitesmoke;
     font-weight: bolder;
     width: fit-content;
+}
+input {
+    background-color: rgb(42, 42, 42);
+    color: white;
+    font-size: 16px;
 }
 
 @media only screen and (min-width: 550px) {
