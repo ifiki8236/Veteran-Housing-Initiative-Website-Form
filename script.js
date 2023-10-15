@@ -37,8 +37,6 @@ function sendUserData(e) {
         alert('Required areas cannot be empty')
         console.error(error)
     }
-    
-
 }
 
 // the getCheckedCheckboxes function
